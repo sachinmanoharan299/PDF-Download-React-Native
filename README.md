@@ -57,6 +57,10 @@ Now that you have successfully run the app, let's modify it.
 
 ## Congratulations! :tada:
 
+## Important 
+For Android 13 and above (API level 33+), we don't request any storage permissions. Instead, we proceed directly with the download.
+For Android 10 and above, after saving the file, we use the MediaStore API to make the file visible in the device's Downloads folder. This requires a native module (RNAndroidStore.kt,RNAndroidStorePackage.kt,MainApplication.kt) which you'll need to implement. please check Path: android/app/src/main/java/com/pdfdownloadreactnative/RNAndroidStore.kt
+
 You've successfully run and modified your React Native App. :partying_face:
 
 ### Now what?
